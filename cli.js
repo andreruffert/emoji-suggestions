@@ -47,5 +47,3 @@ emojiSuggestions(args.word).forEach(suggestion => {
     ${args.word} ${suggestion[args.word]}
   `);
 });
-
-
