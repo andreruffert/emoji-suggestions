@@ -14,6 +14,9 @@
     "ava": "^0.15.2",
     "xo": "^0.16.0"
   },
+  "engines": {
+    "node": ">=6"
+  },
   "scripts": {
     "test": "xo && ava"
   },
