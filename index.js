@@ -10,9 +10,9 @@ function emojiSuggestions(word) {
       };
     });
   } else {
-    suggestions = {
+    suggestions = [{
       [word]: suggestEmoji(word)
-    };
+    }];
   }
   return suggestions;
 }

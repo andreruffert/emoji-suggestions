@@ -15,7 +15,7 @@ $ npm install emoji-suggestions -S
 const emojiSuggestions = require('emoji-suggestions');
 
 emojiSuggestions('hello');
-// => { hello: [ '👋' ] }
+// => [{ hello: [ '👋' ] }]
 
 ```
 
