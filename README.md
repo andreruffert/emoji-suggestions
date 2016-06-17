@@ -2,6 +2,8 @@
 
 > Emoji suggestions for words.
 
+[![npm version](https://img.shields.io/npm/v/emoji-suggestions.svg)](https://www.npmjs.com/package/emoji-suggestions)
+
 ## Install
 
 ```console
