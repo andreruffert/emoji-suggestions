@@ -11,10 +11,11 @@
     "pluralize": "^2.0.0"
   },
   "devDependencies": {
+    "ava": "^0.15.2",
     "xo": "^0.16.0"
   },
-   "scripts": {
-    "test": "xo"
+  "scripts": {
+    "test": "xo && ava"
   },
   "xo": {
     "space": true
