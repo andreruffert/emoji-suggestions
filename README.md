@@ -11,6 +11,7 @@ $ npm install emoji-suggestions -S
 ```
 
 ## Usage
+
 ```js
 const emojiSuggestions = require('emoji-suggestions');
 
