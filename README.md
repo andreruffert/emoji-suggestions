@@ -17,6 +17,6 @@ emojiSuggestions('hello');
 
 ```
 
-# License
+## License
 
 MIT © [André Ruffert](http://andreruffert.com)
