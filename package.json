@@ -1,6 +1,6 @@
 {
   "name": "emoji-suggestions",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Emoji suggestions for words",
   "main": "index.js",
   "bin": "cli.js",
