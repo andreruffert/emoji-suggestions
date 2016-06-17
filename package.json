@@ -1,0 +1,33 @@
+{
+  "name": "emoji-suggestions",
+  "version": "1.0.0",
+  "description": "Emoji suggestions for words",
+  "main": "index.js",
+  "dependencies": {
+    "pluralize": "^2.0.0",
+    "emojilib": "^2.0.2"
+  },
+  "devDependencies": {
+    "xo": "^0.16.0"
+  },
+   "scripts": {
+    "test": "xo"
+  },
+  "xo": {
+    "space": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreruffert/emoji-suggestions.git"
+  },
+  "keywords": [
+    "emoji",
+    "suggestion"
+  ],
+  "author": "André Ruffert <andreruffert.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andreruffert/emoji-suggestions/issues"
+  },
+  "homepage": "https://github.com/andreruffert/emoji-suggestions#readme"
+}
