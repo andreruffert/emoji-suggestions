@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "Emoji suggestions for words",
   "main": "index.js",
+  "bin": "cli.js",
   "dependencies": {
-    "pluralize": "^2.0.0",
-    "emojilib": "^2.0.2"
+    "chalk": "^1.1.3",
+    "emojilib": "^2.0.2",
+    "meow": "^3.7.0",
+    "pluralize": "^2.0.0"
   },
   "devDependencies": {
     "xo": "^0.16.0"
@@ -22,7 +25,9 @@
   },
   "keywords": [
     "emoji",
-    "suggestion"
+    "suggestion",
+    "cli-app",
+    "cli"
   ],
   "author": "André Ruffert <andreruffert.com>",
   "license": "MIT",

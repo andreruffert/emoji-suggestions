@@ -19,6 +19,26 @@ emojiSuggestions('hello');
 
 ```
 
+## CLI
+
+```console
+$ npm install emoji-suggestions --global
+```
+
+```console
+$ emoji-suggestions --help
+
+  Usage:
+    $ emoji-suggestions <word>
+
+  Options:
+    --help      Show information
+    --version   Show current version
+
+  Example:
+    $ emoji-suggestions hello
+```
+
 ## Related
 
 powered by [emojilib](https://github.com/muan/emojilib).
