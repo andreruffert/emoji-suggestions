@@ -47,7 +47,7 @@ const suggestions = emojiSuggestions(args.word);
 if (suggestions) {
   suggestions.forEach(suggestion => {
     console.log(`
-      ${args.word} ${suggestion[args.word]}
+      ${args.word} ${suggestion[args.word].join(' ')}
     `);
   });
 }
