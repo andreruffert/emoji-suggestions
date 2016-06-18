@@ -10,7 +10,7 @@ function emojiSuggestions(word) {
   const suggestions = (Array.isArray(word) ? word : [word])
     .map(word => ({[word]: suggestEmoji(word)}))
     .filter(suggestion => suggestion[word]);
-  return suggestions;
+  return suggestions.length > 0 ? suggestions : false;
 }
 
 /**
@@ -27,6 +27,7 @@ function suggestEmoji(word) {
     }
     return matches;
   }, []);
+  return suggestions.length > 0 ? suggestions : false;
 }
 
 /**
