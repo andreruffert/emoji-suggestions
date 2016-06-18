@@ -1,6 +1,10 @@
 import test from 'ava';
 import emojiSuggestions from './';
 
-test(t => {
+test('Empty string should return false', t => {
+  t.false(emojiSuggestions(''));
+});
+
+test('"hello" should return array', t => {
   t.true(Array.isArray(emojiSuggestions('hello')));
 });
