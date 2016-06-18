@@ -24,12 +24,12 @@ function emojiSuggestions(word) {
  */
 function suggestEmoji(word) {
   const wordMutations = getWordMutations(word);
-  return Object.keys(emoji.lib).reduce((suggestions, key) => {
-    const keywords = getEmojiKeywords(key);
+  const suggestions = Object.keys(emoji.lib).reduce((matches, emojiName) => {
+    const keywords = getEmojiKeywords(emojiName);
     if (hasKeywordMatch(keywords, wordMutations)) {
-      suggestions.push(emoji.lib[key].char);
+      matches.push(emoji.lib[emojiName].char);
     }
-    return suggestions;
+    return matches;
   }, []);
 }
 
