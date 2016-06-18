@@ -1,6 +1,11 @@
 const emoji = require('emojilib');
 const pluralize = require('pluralize');
 
+/**
+ * emojiSuggestions
+ * @param  {String|Array} word
+ * @return {Array}
+ */
 function emojiSuggestions(word) {
   const suggestions = (Array.isArray(word) ? word : [word])
     .map(word => ({[word]: suggestEmoji(word)}))
