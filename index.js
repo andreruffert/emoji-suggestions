@@ -2,18 +2,9 @@ const emoji = require('emojilib');
 const pluralize = require('pluralize');
 
 function emojiSuggestions(word) {
-  let suggestions;
-  if (Array.isArray(word)) {
-    suggestions = word.map(word => {
-      return {
-        [word]: suggestEmoji(word)
-      };
-    });
-  } else {
-    suggestions = [{
-      [word]: suggestEmoji(word)
-    }];
-  }
+  const suggestions = (Array.isArray(word) ? word : [word])
+    .map(word => ({[word]: suggestEmoji(word)}))
+    .filter(suggestion => suggestion[word]);
   return suggestions;
 }
 
