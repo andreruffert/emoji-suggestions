@@ -44,10 +44,15 @@ if (!args.word) {
 
 const suggestions = emojiSuggestions(args.word);
 
-if (suggestions) {
-  suggestions.forEach(suggestion => {
-    console.log(`
-      ${args.word} ${suggestion[args.word].join(' ')}
-    `);
-  });
+if (!suggestions) {
+  console.log(`
+    🙁 : No suggestions
+  `);
+  process.exit(0);
 }
+
+suggestions.forEach(suggestion => {
+  console.log(`
+    ${args.word} ${suggestion[args.word].join(' ')}
+  `);
+});
