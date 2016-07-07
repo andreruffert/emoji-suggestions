@@ -7,7 +7,7 @@
 ## Install
 
 ```console
-$ npm install emoji-suggestions -S
+$ npm i emoji-suggestions -S
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ emojiSuggestions('hello');
 ## CLI
 
 ```console
-$ npm install emoji-suggestions --global
+$ npm i emoji-suggestions -g
 ```
 
 ```console
